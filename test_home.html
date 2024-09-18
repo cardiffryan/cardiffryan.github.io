@@ -13,30 +13,31 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        /* Header */
+        /* Header with Flexbox for positioning */
         header {
             background-color: #2C5F2D; /* Forest Green */
             color: white;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        /* Logo/Title */
+        /* Header Title on the Left */
         header h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 2.5em;
             letter-spacing: 1px;
             font-weight: 400;
         }
-        /* Navigation Bar inside Header */
+        /* Navigation Bar on the Right */
         nav {
-            margin-top: 20px;
+            display: flex;
         }
         nav a {
             text-decoration: none;
             color: white;
             font-size: 18px;
-            margin: 0 15px;
+            margin: 0 10px;
             padding: 10px 20px;
             border-radius: 30px;
             border: 2px solid transparent;
@@ -102,7 +103,7 @@
 <body>
 
 <header>
-    <h1>Welcome to [Your Website Name]</h1>
+    <h1>[Your Website Name]</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
