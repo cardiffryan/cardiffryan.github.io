@@ -38,15 +38,26 @@
             color: white;
             font-size: 18px;
             margin: 0 10px;
-            padding: 10px 20px;
-            border-radius: 30px;
-            border: 2px solid transparent;
-            transition: background-color 0.3s, border-color 0.3s;
+            padding: 10px 0;
+            position: relative;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            background-color: white;
-            color: #2C5F2D; /* Hover effect: white text, green background */
-            border: 2px solid white;
+            color: #FFD700; /* Optional: Gold color on hover for added effect */
+        }
+        /* Underline effect for nav links on hover */
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            background: #FFD700; /* Gold underline */
+            transition: width 0.3s ease;
+        }
+        nav a:hover::after {
+            width: 100%; /* Expand underline on hover */
         }
         /* Main Section */
         section {
@@ -72,16 +83,33 @@
         .about-button {
             display: inline-block;
             padding: 15px 30px;
-            background-color: #2C5F2D;
-            color: white;
+            background-color: transparent;
+            color: #2C5F2D;
             text-decoration: none;
+            border: 2px solid #2C5F2D;
             border-radius: 30px;
-            margin-top: 30px;
             font-size: 18px;
-            transition: background-color 0.3s ease;
+            position: relative;
+            transition: color 0.3s ease;
         }
         .about-button:hover {
-            background-color: #214B1A; /* Darker Forest Green */
+            color: #214B1A; /* Darker Forest Green on hover */
+        }
+        /* Underline effect for the button on hover */
+        .about-button::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            background: #214B1A; /* Darker Forest Green underline */
+            transition: width 0.3s ease;
+            left: 0;
+            bottom: -5px;
+        }
+        .about-button:hover::after {
+            width: 100%; /* Expand underline on hover */
         }
         /* Footer */
         footer {
