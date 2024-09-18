@@ -3,81 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Ryan Cardiff" content="For keeping track of life.">
+    <meta name="description" content="Ryan Cardiff">
     <title>Ryan Cardiff</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
+        /* Header */
         header {
-            background-color: #2C3E50;
+            background-color: #2C5F2D; /* Forest Green */
             color: white;
-            padding: 20px;
+            padding: 60px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+            font-weight: 400;
         }
+        /* Navigation */
         nav {
-            text-align: center;
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         nav a {
             text-decoration: none;
-            color: #2C3E50;
+            color: #2C5F2D;
             font-size: 18px;
-            margin: 0 10px;
+            margin: 0 15px;
             padding: 10px 20px;
-            background-color: #f4f4f4;
-            border: 2px solid #2C3E50;
-            border-radius: 4px;
-            transition: background-color 0.3s, color 0.3s;
+            border-radius: 30px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
         }
         nav a:hover {
-            background-color: #2C3E50;
+            background-color: #2C5F2D;
             color: white;
+            border: 2px solid #2C5F2D;
         }
+        /* Main Section */
         section {
-            padding: 40px;
-            max-width: 900px;
+            padding: 60px 20px;
+            max-width: 1200px;
             margin: 20px auto;
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #2C3E50;
-            font-size: 24px;
+            color: #2C5F2D;
+            font-size: 28px;
             margin-bottom: 20px;
+            font-weight: 500;
         }
         p {
-            line-height: 1.6;
+            line-height: 1.8;
+            font-size: 18px;
+            color: #555;
         }
+        /* About Button */
         .about-button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #2C3E50;
+            padding: 15px 30px;
+            background-color: #2C5F2D;
             color: white;
             text-decoration: none;
-            border-radius: 4px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
+            border-radius: 30px;
+            margin-top: 30px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
         }
         .about-button:hover {
-            background-color: #34495E;
+            background-color: #214B1A; /* Darker Forest Green */
         }
+        /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #2C3E50;
+            padding: 30px;
+            background-color: #2C5F2D;
             color: white;
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -94,11 +115,9 @@
 </nav>
 
 <section>
-    <h2>Your Gateway to [Products/Services]</h2>
-    <p>At [Your Website Name], we specialize in offering innovative solutions that help you succeed in [your industry/field]. Explore our products and services designed to meet your unique needs.</p>
-    <p>We are committed to providing high-quality services that make a difference in the world. Our team of dedicated professionals is here to support you every step of the way.</p>
+    <h2>Personal & professional site.</h2>
+    <p>I wanted to create this website to keep track of the things that matter to me - in work and life, science, nature, food, music. If I keep up with it, this will serve as a sort of virtual journal.</p>
     
-    <a href="about.html" class="about-button">Learn More About Us</a>
 </section>
 
 <footer>
